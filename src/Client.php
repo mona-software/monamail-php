@@ -37,7 +37,7 @@ class Client
         $url = $this->baseUrl . '/v1' . $path;
         $query = array_filter($query, fn($v) => $v !== null);
         if ($query) $url .= '?' . http_build_query($query, '', '&', PHP_QUERY_RFC3986);
-        $headers = ['Authorization' => 'Bearer ' . $this->apiKey, 'Accept' => 'application/json', 'User-Agent' => 'monamail-php/0.1.0'];
+        $headers = ['Authorization' => 'Bearer ' . $this->apiKey, 'Accept' => 'application/json', 'User-Agent' => 'monamail-php/0.1.1'];
         $raw = $body === null ? null : json_encode($body, JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE);
         if ($raw !== null) $headers['Content-Type'] = 'application/json';
         if ($method === 'POST') $headers['Idempotency-Key'] = $idempotencyKey ?? $body['idempotency_key'] ?? bin2hex(random_bytes(16));

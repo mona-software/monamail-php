@@ -1,6 +1,6 @@
 {
   "name": "mona/monamail",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "SDK gửi email giao dịch cho người Việt và AI agent",
   "license": "MIT",
   "type": "library",

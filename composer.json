@@ -27,7 +27,15 @@
   ],
   "homepage": "https://monamail.vn",
   "support": {
-    "source": "https://github.com/themonagroup/monamail",
-    "docs": "https://monamail.vn/docs"
-  }
+    "source": "https://github.com/mona-software/monamail-php",
+    "docs": "https://monamail.vn/docs",
+    "issues": "https://github.com/mona-software/monamail-php/issues"
+  },
+  "authors": [
+    {
+      "name": "MONA Software",
+      "email": "info@themona.global",
+      "homepage": "https://mona.media"
+    }
+  ]
 }
